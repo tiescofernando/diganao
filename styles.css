@@ -151,25 +151,28 @@ footer{
         padding: 5px; /* Reduz o padding */
         margin: 20px; /* Reduz a margem */
     }
-
-    header img {
+    .site-branding {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    }
+    #nav-top img {
         width: 100px; /* Reduz a largura da imagem do cabeçalho */
         height: auto; /* Mantém a proporção da imagem */
         margin: 10px; /* Ajusta a margem */
     }
 
     #txt {
-        font-size: 16px; /* Diminui o tamanho da fonte */
-        left: 50px; /* Ajusta a posição do texto */
-        margin: 5px; /* Reduz a margem */
-    }
+      font-size: 1.7rem;
+      font-weight: 700;
+  }
 
-    header li {
+    #nav-top ul {
         display: block; /* Altera para exibição em bloco para empilhar os itens */
         margin-bottom: 10px; /* Adiciona espaço entre os itens */
     }
 
-    header a {
+    #nav-top a {
         padding: 5px 5px; /* Ajusta o preenchimento dos links */
         font-size: 10px;
       
@@ -195,8 +198,8 @@ footer{
 }
 
 img {
-  width: 300px; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
-  height: 250px; /* Mantém a proporção da imagem */
+  width: 20em; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+  height: 10em; /* Mantém a proporção da imagem */
   
   border-radius: 10px;
 }
