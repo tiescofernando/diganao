@@ -4,62 +4,67 @@
   --font02: font-weight: 700px; 
   --font03: uppercase;
 }
-
-* {
-  max-width: 1000px;
-}
-
-html, body{
+body{
     width: 95%;
+    max-width: 1200px;
     height: 100vh;
-    padding: 10px;
-    margin: 50px;
+    margin: 0 auto;
 }
 
 body{
   font: Arial, Sans-serif;
 }
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
 
 header img{
     width: 123px;
     height: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 15px;
+    /* position: absolute; */
+    /* left: 0;
+    top: 0; */
+   /*  margin: 15px; */
 }
 
 #txt{
-  font-size: var(--font-tema);
+  font-size: 2.7rem;
   font-family: var(--font01);
-  font-weight: var(--font02);
+  font-weight: bold;
   text-transform: var(--font03);
   color: black;
-  position: relative;
+  /* position: relative;
   left: 105px;
-  margin: 10px;
+  margin: 10px; */
 }
-
-header li{
-  list-style: none;
-  display: inline-block;
-  gap: 15px;
-  letter-spacing: 1px;
-  
-}
-
-header a{
-  text-decoration: none;
-  font-weight: bold;
-  color: #d7b221;
+#nav-top{
+  display: block;
+  font-weight: 700;
   text-transform: uppercase;
   font-family: "Archivo Narrow",sans-serif;
-  display: relative;
-  padding: 10px 20px 0 30px;  
+  justify-content: right;
+} 
+
+#nav-top ul{
+  list-style: none;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: end;
+  gap: 3em;
 }
 
-header a:hover{
+#nav-top a{
+  text-decoration: none;
+  color: #d7b221;
+}
+
+#nav-top a:hover{
   color: #999;
+  outline: 2px solid #ccc;
+  padding: 3px;
+  border-radius: 3px;
 }
 
 .slidesshow-content{
@@ -82,9 +87,8 @@ header a:hover{
 }
 
 img {
-  width: 400px; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
-  height: 300px; /* Mantém a proporção da imagem */
-  height: auto;
+  width: 20rem; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+  height: 10rem; /* Mantém a proporção da imagem */
   border-radius: 10px;
 }
 
@@ -193,7 +197,7 @@ footer{
 img {
   width: 300px; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
   height: 250px; /* Mantém a proporção da imagem */
-  height: auto;
+  
   border-radius: 10px;
 }
 
@@ -225,4 +229,7 @@ img {
       height: 200px;
     }
 }
+
+
+
 
